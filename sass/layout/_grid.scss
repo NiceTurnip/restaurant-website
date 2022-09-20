@@ -1,0 +1,30 @@
+.wrap {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 1fr 7fr 1fr;
+    gap: 3px;
+    grid-template-areas:
+        "n n n n n n n n n n n n"
+        "h h h h h h h h h h h h"
+        "c c c c c c c c c c c c"
+        "f f f f f f f f f f f f";
+}
+
+.navigation {
+    grid-area: n;
+}
+
+.header {
+    grid-area: h;
+}
+
+.content {
+    grid-area: c;
+}
+
+.footer {
+    grid-area: f;
+}
+
+
